@@ -79,7 +79,7 @@ h1 {
   border: 2px solid #ececec;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 840px) {
   .header {
     display: none
   }
@@ -130,4 +130,40 @@ h1 {
 .link:hover .bar {
   opacity: 1;
   bottom: 5px;
+}
+
+@media (min-width: 840px) {
+  .header-mobile {
+    display: none
+  }
+}
+
+.header-mobile {
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: right;
+  position: relative;
+}
+
+.header-mobile .logo-mobile {
+  font-family: ps;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  font-weight: 100;
+  padding: 26px;
+}
+
+.link-mobile {
+  font-family: ps;
+  display: inline-block;
+  padding: 2px 0;
+  margin: 2px 2px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0f0f;
+  font-weight: 600;
+  font-size: 18px;
 }
